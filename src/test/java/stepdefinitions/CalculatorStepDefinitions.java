@@ -16,7 +16,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 public class CalculatorStepDefinitions {
 
     @Managed(driver = "Appium")
-    public WebDriver hisMobileDevice;
+    public WebDriver theMobileDevice;
 
     @Before
     public void set_the_stage() {
@@ -24,10 +24,10 @@ public class CalculatorStepDefinitions {
     }
 
 
-    @Given("I enter to ToolsQA page")
-    public void iEnterToEvalartTest() {
-        theActorCalled("Jhon")
-                .can(BrowseTheWeb.with(hisMobileDevice));
+    @Given("I open the Calculator application")
+    public void iOpenTheCalculatorApplication() {
+        theActorCalled("Actor")
+                .can(BrowseTheWeb.with(theMobileDevice));
     }
 
 //    @Before
@@ -46,11 +46,10 @@ public class CalculatorStepDefinitions {
 //
 //    }
 
-    @Given("^I login with my user already created$")
-    public void iLoginWithMyUserAlreadyCreated(DataTable dataTable) {
-
-
-    }
+//    @Given("^I login with my user already created$")
+//    public void iLoginWithMyUserAlreadyCreated(DataTable dataTable) {
+//
+//    }
 
     @Then("^only the book is are register$")
     public void onlyTheBookIsAreRegister() {

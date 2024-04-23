@@ -36,7 +36,7 @@ ext {
 
 dependencies {
     implementation "ch.qos.logback:logback-classic:${logbackVersion}"
-    implementation "io.appium:java-client:8.2.0"
+    //implementation "io.appium:java-client:8.2.0"
 
 
     testImplementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
